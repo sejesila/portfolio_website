@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="default.css" type="text/css">
+    <link rel="stylesheet" id="theme-style" type="text/css" href="">
 </head>
 
 <body>
@@ -39,10 +40,10 @@
                     <img src="images/sila.png" id="profile_pic">
                     <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
                     <div id="theme-options-wrapper">
-                        <div class="theme-dot" id="light-mode"></div>
-                        <div class="theme-dot" id="blue-mode"></div>
-                        <div class="theme-dot" id="green-mode"></div>
-                        <div class="theme-dot" id="purple-mode"></div>
+                        <div data-mode="light" class="theme-dot" id="light-mode"></div>
+                        <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
+                        <div data-mode="green" class="theme-dot" id="green-mode"></div>
+                        <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
 
                     </div>
                     <p id="settings-note">Theme settings will be saved for <br> your next visit</p>
@@ -122,7 +123,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Instagram clone</h6>
                             <p class="post-intro"> Designed and built a clone for the instagram website</p>
-                            <a href="#">Read More</a>
+                            <a href="posts.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -132,7 +133,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Pizza Ordering system</h6>
                             <p class="post-intro"> Created an online web app for ordering pizza and tracking deliveries</p>
-                            <a href="#">Read More</a>
+                            <a href="posts.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +143,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">News App</h6>
                             <p class="post-intro"> Designed and developed an e-news site</p>
-                            <a href="#">Read More</a>
+                            <a href="posts.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -152,9 +153,25 @@
     </section>
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Get In Touch</h3>
+            <form id="contact-form" action="">
+                <label for="">Name</label>
+                <input type="text" class="input-field" name="name">
+
+                <label for="">Subject</label>
+                <input type="text" class="input-field" name="subject">
+
+                <label for="">Email</label>
+                <input type="text" class="input-field" name="email">
+
+                <label for="">Message</label>
+                <textarea name="message" class="input-field" cols="30" rows="10"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
